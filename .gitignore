@@ -1,0 +1,7 @@
+# Local datasets / generated masks
+combined_masks_2000/
+combined_masks_10000/
+combined_masks_old/
+dataset_2000/
+dataset_10000/
+dataset_old/
