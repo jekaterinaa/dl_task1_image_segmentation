@@ -54,7 +54,7 @@ def visualize_predictions(model, img_dir, mask_dir, device, num_samples=3, img_s
             continue
         gt_mask_pil = Image.open(mask_path).resize(img_size, Image.NEAREST)
         gt_mask = np.array(gt_mask_pil, dtype=np.int64)
-        gt_mask = gt_mask // 80
+        # gt_mask = gt_mask // 80
         gt_mask = np.clip(gt_mask, 0, 3)
 
         inp = to_tensor(img_resized).unsqueeze(0).to(device)  # (1,3,H,W)
